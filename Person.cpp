@@ -18,11 +18,8 @@ void Person:: setFemale(bool isF){
 }
 std::string Person:: getName(bool isCstr){
 	std::string PersonName="";
-	if (!isCstr){
-		PersonName=name;
-	}
-	else{
-		PersonName=name;
+	PersonName=name;
+	if(isCstr){
 		transform(PersonName.begin(),PersonName.end(),PersonName.begin(), ::toupper);//using transform to operate on the entire sequence of chars
 	}
 	return PersonName;
