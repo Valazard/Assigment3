@@ -7,6 +7,7 @@ Notes:
 #ifndef PERSON_H
 #define PERSON_H
 	#include <string>
+	#include <bits/stdc++.h>
 	class Person{
 		private:
 			::std::string name;

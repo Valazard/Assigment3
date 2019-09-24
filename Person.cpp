@@ -22,7 +22,8 @@ std::string Person:: getName(bool isCstr){
 		PersonName=name;
 	}
 	else{
-		PersonName = name.c_str();//check this later
+		PersonName=name;
+		transform(PersonName.begin(),PersonName.end(),PersonName.begin(), ::toupper);//using transform to operate on the entire sequence of chars
 	}
 	return PersonName;
 } 
