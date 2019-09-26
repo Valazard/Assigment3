@@ -5,10 +5,8 @@ Purpose: Program to created people and add then to a family.
 Notes: 
 *****************************************/
 #include "main.h"
-#include "person.h"
 
 int main() {
-
     /*
      * this is your test data. it uses a concept called parallel arrays 
      */
@@ -35,13 +33,13 @@ int main() {
 		}
 		cout<<"\t"<<family[LoopCounter].getName()<<": "<<currentAge<<": ";
 		if(family[LoopCounter].isFemale()){
-		cout<<"female\n";
+			cout<<"female\n";
 		}
 		else{
 			cout<<"not female\n";
 		}
 	}
-	cout<<"The last person in the list is: "<<family[NUMPEOPLE-1].getName(true)<<"\n";//exploring the knowledge of the array size, maybe change for something more robust?
+	cout<<"\nThe last person in the list is: "<<family[NUMPEOPLE-1].getName(true)<<"\n\n";//exploring the knowledge of the array size, maybe change for something more robust?
 	cout<<"The number of people in the family under 18 is: "<<QntMinors<<"\n";
     return 0;
 }
