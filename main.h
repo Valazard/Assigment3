@@ -13,7 +13,7 @@ Notes:
 
 #include <iostream>
 #include <string>
-#include "Person.h"
+#include "person.h"
 
 using std::cout;
 using std::endl;

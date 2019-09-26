@@ -4,7 +4,7 @@ Assignment: 3.
 Purpose: Program to created people and add then to a family.
 Notes: 
 *****************************************/
-#include "Person.h"
+#include "person.h"
 
 void Person:: setName(std::string NewName){	
 	name=NewName;
